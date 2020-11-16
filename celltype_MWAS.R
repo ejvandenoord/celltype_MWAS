@@ -37,7 +37,5 @@ param = ramwasParameters(
 
 param = parameterPreprocess(param)
 
-if (!file.exists(paste0(param$dirpca,'\\eigenvalues.bmat'))) ramwas4PCA(param) 
-
-# cell type MWAS
+# bulk and cell type MWAS
 run_celltypeMWAS(param)
